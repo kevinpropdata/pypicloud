@@ -33,7 +33,7 @@ class ICache(object):
         """
         if not self.distinct():
             LOG.info("Cache is empty. Rebuilding from storage backend...")
-            self.reload_from_storage()
+            # self.reload_from_storage()
             LOG.info("Cache repopulated")
 
     @classmethod
