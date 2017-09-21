@@ -66,10 +66,7 @@ class ICache(object):
 
     def reload_from_storage(self):
         """ Make sure local database is populated with packages """
-        self.clear_all()
-        packages = self.storage.list(self.package_class)
-        for pkg in packages:
-            self.save(pkg)
+        pass
 
     def upload(self, filename, data, name=None, version=None, summary=None):
         """
